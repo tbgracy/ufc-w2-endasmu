@@ -1,0 +1,17 @@
+button, .button {
+    font-size: .8rem;
+    border-radius: 30px;
+    background: linear-gradient(90deg, $primary-color1, $primary-color2, $primary-color1, $primary-color2);
+    border: none;
+    padding: .8rem 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-position: 0% 0%;
+    background-size: 250% 250%;
+    transition: all 400ms linear;
+
+    &:hover {
+    transition: all 200ms linear;
+    background-position: 100% 0%;
+    }
+}

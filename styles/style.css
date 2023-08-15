@@ -1,0 +1,64 @@
+nav {
+  position: relative;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 1rem;
+  box-sizing: border-box;
+  display: block;
+}
+
+button, .button {
+  font-size: 0.8rem;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #efc652, #9cc873, #efc652, #9cc873);
+  border: none;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-position: 0% 0%;
+  background-size: 250% 250%;
+  transition: all 400ms linear;
+}
+button:hover, .button:hover {
+  transition: all 200ms linear;
+  background-position: 100% 0%;
+}
+
+@keyframes spinAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  transform-origin: center;
+  animation: spinAnimation 2s linear infinite;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-color: #232323;
+  color: rgba(255, 255, 255, 0.822);
+  font-family: sans-serif;
+}/*# sourceMappingURL=style.css.map */
