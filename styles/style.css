@@ -1,19 +1,30 @@
 nav {
   position: relative;
   width: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  height: 10vh;
   display: flex;
   box-sizing: border-box;
   justify-content: space-between;
 }
+nav .logo {
+  font-weight: bold;
+  place-content: center;
+  display: grid;
+}
 nav ul {
   display: flex;
+  align-items: center;
 }
 nav ul li {
   margin: 1rem;
   box-sizing: border-box;
   display: block;
+  cursor: pointer;
+}
+nav ul li:last-of-type {
+  border-radius: 20px;
+  border: 1.5px solid white;
+  padding: 0.7rem 2rem;
 }
 
 button, .button {
@@ -42,15 +53,22 @@ button:hover, .button:hover {
   }
 }
 .spinner {
-  width: 40px;
-  height: 40px;
+  position: absolute;
+  right: 3rem;
+  width: 5rem;
   transform-origin: center;
-  animation: spinAnimation 2s linear infinite;
+  animation: spinAnimation 10s linear infinite;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -61,4 +79,44 @@ body {
   background-color: #232323;
   color: rgba(255, 255, 255, 0.822);
   font-family: sans-serif;
+  padding: 0 5rem;
+}
+body h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+body section#landing {
+  height: 90vh;
+  position: relative;
+}
+body section#landing #info {
+  display: flex;
+  height: 70%;
+}
+body section#landing #info .info-text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body section#landing #info .img-landing {
+  flex-grow: 1;
+}
+body section#landing #info #girl {
+  height: 80%;
+}
+body section#landing #numbers {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  flex-grow: 4;
+  display: flex;
+  bottom: 3rem;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.014);
+  width: 80%;
+  height: 10rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.096);
 }/*# sourceMappingURL=style.css.map */

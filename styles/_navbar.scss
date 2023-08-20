@@ -1,19 +1,32 @@
 nav {
     position: relative;
     width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    height: 10vh;
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
 
+    .logo {
+        font-weight: bold;
+        place-content: center;
+        display: grid;
+    }
+
     ul {
         display: flex;
+        align-items: center;
 
         li {
             margin: 1rem;
             box-sizing: border-box;
             display: block;
+
+            &:last-of-type {
+                border-radius: 20px;
+                border: 1.5px solid white;
+                padding: .7rem 2rem;
+            }
+            cursor: pointer;
         }
     }
 }
